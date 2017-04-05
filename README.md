@@ -12,12 +12,12 @@
 ## 安装
 
 ```sh
-npm install qiniu-webpack-plugin --save-dev
+npm install webpack-plugin-qiniu --save-dev
 ```
 
 ## 引入
 ```
-var QiniuPlugin = require('qiniu-webpack-plugin');
+var QiniuPlugin = require('webpack-plugin-qiniu');
 ```
 
 ## 配置
@@ -37,8 +37,8 @@ var QiniuPlugin = require('qiniu-webpack-plugin');
 var qiniuPlugin = new QiniuPlugin({
   ACCESS_KEY: '',
   SECRET_KEY: '',
-  bucket: 'my-qiniu-webpack',
-  path: '[hash]'
+  bucket: 'static-xxx-com',
+  path: '[hash]',
 });
 
 // 这里是 Webpack 的配置
